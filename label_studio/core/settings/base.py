@@ -83,9 +83,9 @@ DATABASES_ALL = {
     },
     DJANGO_DB_MYSQL: {
         'ENGINE': 'django.db.backends.mysql',
-        'USER': get_env('MYSQL_USER', 'root'),
+        'USER': get_env('MYSQL_USER', 'label_studio'),
         'PASSWORD': get_env('MYSQL_PASSWORD', ''),
-        'NAME': get_env('MYSQL_NAME', 'labelstudio'),
+        'NAME': get_env('MYSQL_NAME', 'label_studio'),
         'HOST': get_env('MYSQL_HOST', 'localhost'),
         'PORT': int(get_env('MYSQL_PORT', '3306')),
     },
